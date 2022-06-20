@@ -25,6 +25,7 @@ The app is composed by the following modules (they could become independent grad
 - [Timber](https://github.com/JakeWharton/timber) for logging
 - [Retrofit](https://github.com/square/retrofit) for http requests because is awesome
 - [Room](https://developer.android.com/training/data-storage/room) because it seems to be the standard
+- [Github Search Users API](https://docs.github.com/en/rest/search#search-users)
 
 ### Notes
 - Decided to not add UI tests as well, it will take me some time to look into what are the best
