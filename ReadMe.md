@@ -26,3 +26,4 @@
   autogenerate it from the spec using - https://github.com/OpenAPITools/openapi-generator-cli (or in
   this case maybe even one of the already available
   libraries [github-libraries](https://docs.github.com/en/rest/overview/libraries)).
+- Database queries can be improved to better match results from github and/or speed them up.
