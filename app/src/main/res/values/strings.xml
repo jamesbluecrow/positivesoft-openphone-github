@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Github User Search</string>
+    <string name="no_results_message">No results found!</string>
+    <string name="offline_results_message">Offline results only!</string>
+    <string name="rate_limit_exceeded_message">Rate limit exceeded. Wait for a minute!</string>
+    <string name="unknown_error">Something went wrong :(</string>
+</resources>
