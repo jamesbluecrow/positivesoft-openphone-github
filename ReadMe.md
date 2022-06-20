@@ -5,6 +5,19 @@
 - Information displayed in screen comes from the db always
 - Use offline results when there is no connectivity
 
+### Architecture
+- [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
+
+The app is composed by the following modules (they could become independent gradle modules if the app grows):
+
+| Package      | Description                                                                                                                                                 |
+|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| data         | Contains the repositories + data sources                                                                                                                    |
+| db           | Contains the database related code (Database, Entities, Dao, etc.                                                                                           |
+| di           | Dagger module for dependency injection                                                                                                                      |
+| domain       | Contains the use cases (they are too simple in this app). Could define other models to avoid propagating db entities to other layers if the app was bigger. |
+| presentation | Contains `@Composable` views + ViewModels + any other UI related logic.                                                                                     |
+
 ### Dependencies:
 - [Dagger](https://dagger.dev/hilt/gradle-setup.html) for DI because I was familiar with it
 - [Coil](https://github.com/coil-kt/coil) for images because it looks simple
